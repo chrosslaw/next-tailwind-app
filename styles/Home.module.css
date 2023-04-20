@@ -107,6 +107,41 @@
 .logo {
   position: relative;
 }
+/* Footer styling */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  position: relative;
+
+  height: 25vh;
+  bottom: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fdffa2;
+  padding: 15px;
+  margin-bottom: 50px;
+  font-size: calc(10px + 2vmin);
+}
+
+.footer a:hover {
+  color: red;
+}
+.contactButton {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: calc(6px + 2vmin);
+}
+.dribble {
+  --fa-bounce-height: 25px;
+  --fa-bounce-rebound: 5px;
+  --fa-bounce-jump-scale-x: 1.5;
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -209,10 +244,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }

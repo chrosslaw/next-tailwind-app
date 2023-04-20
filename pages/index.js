@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import Footer from "./footer/Footer";
+// import { FontAwesome } from "@fortawesome/react-fontawesome";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +39,7 @@ export default function Home() {
             <p className={inter.className}></p>
           </Link>
         </div>
+        <Footer />
       </main>
     </>
   );
