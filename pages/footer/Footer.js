@@ -1,48 +1,44 @@
-import { useState } from "react";
-import { Button } from "@mui/material";
-import ContactPageIcon from "@mui/icons-material/ContactPage";
-import ContactMailRoundedIcon from "@mui/icons-material/ContactMailRounded";
 import styles from "@/styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDribbble,
+  faFacebook,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-  const [contactBoxVisible, setContactBoxVisible] = useState(false);
-
-  const handleContactButtonClick = () => {
-    setContactBoxVisible(!contactBoxVisible);
-  };
-
   return (
     <footer className={styles.footer}>
-      <div id="contact-box">
-        {contactBoxVisible && (
-          <a
-            id="email"
-            href="mailto:chris@chrosslaw.com"
-            className="text-focus-in contact"
-          >
-            <ContactMailRoundedIcon color="primary" /> chris@chrosslaw.com
-          </a>
-        )}
-      </div>
-
-      <div className={styles.contactButton}>
-        <Button
-          onClick={handleContactButtonClick}
-          variant="contained"
-          size="medium"
-        >
-          <ContactPageIcon /> Contact
-        </Button>
-      </div>
-
       <div className="footer-bottom">
         <a
+          icon={faGithub}
           href="https://github.com/chrosslaw"
           rel="noreferrer"
           target="_blank"
           title="My Github Page"
-        ></a>
+        >
+          <FontAwesomeIcon icon={faGithub} spin pulse />
+        </a>
+
+        <a
+          className="dribble"
+          href="https://dribbble.com/chrosslaw"
+          rel="noreferrer"
+          target="_blank"
+          title="My Dribble Page"
+        >
+          <FontAwesomeIcon icon={faDribbble} bounce />
+        </a>
+
+        <a
+          href="https://www.facebook.com/chrossl"
+          rel="noreferrer"
+          target="_blank"
+          title="My Facebook Page"
+        >
+          <FontAwesomeIcon icon={faFacebook} flip />
+        </a>
 
         <a
           href="https://www.linkedin.com/in/chris-lawrence-99627554"
@@ -51,16 +47,7 @@ const Footer = () => {
           title="My linkedin Page"
           className="fa fa-linkedin fa-shake fa-2x"
         >
-          <i> </i>
-        </a>
-        <a
-          href="https://www.facebook.com/chrossl"
-          target="_blank"
-          rel="noreferrer"
-          title="My facebook Page"
-          className="fa fa-facebook fa-flip fa-2x"
-        >
-          <i> </i>
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
     </footer>
