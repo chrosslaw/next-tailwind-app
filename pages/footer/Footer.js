@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className="footer-bottom">
+      <div>
         <a
           icon={faGithub}
           href="https://github.com/chrosslaw"

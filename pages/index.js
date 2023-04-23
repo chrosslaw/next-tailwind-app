@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-import Footer from "./footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,11 +40,9 @@ export default function Home() {
             <h2 className={inter.className}>
               Blog <span>-&gt;</span>
             </h2>
-            <p className={inter.className}></p>
+            <p className={inter.className}>Chris' Technology blog</p>
           </Link>
         </div>
-
-        <Footer />
       </main>
     </>
   );
