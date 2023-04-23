@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import Footer from "./footer/Footer";
-// import { FontAwesome } from "@fortawesome/react-fontawesome";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +31,12 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
+          <Link href="https://chrosslaw.com" className={styles.card}>
+            <h2 className={inter.className}>
+              Portfolio <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}></p>
+          </Link>
           <Link href="https://blog.chrosstech.com" className={styles.card}>
             <h2 className={inter.className}>
               Blog <span>-&gt;</span>
@@ -39,6 +44,7 @@ export default function Home() {
             <p className={inter.className}></p>
           </Link>
         </div>
+
         <Footer />
       </main>
     </>

@@ -18,7 +18,7 @@ const Footer = () => {
           target="_blank"
           title="My Github Page"
         >
-          <FontAwesomeIcon icon={faGithub} spin pulse />
+          <FontAwesomeIcon icon={faGithub} spin />
         </a>
 
         <a
@@ -45,9 +45,8 @@ const Footer = () => {
           rel="noreferrer"
           target="_blank"
           title="My linkedin Page"
-          className="fa fa-linkedin fa-shake fa-2x"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faLinkedin} shake />
         </a>
       </div>
     </footer>
