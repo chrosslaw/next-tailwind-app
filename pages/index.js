@@ -13,7 +13,7 @@ export default function Home() {
         <title>ChrossTech</title>
         <meta name="description" content="NextJS React environment" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.png" />\
       </Head>
       <main className={styles.main}>
         <div className={styles.description}></div>
