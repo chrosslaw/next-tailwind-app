@@ -34,7 +34,9 @@ export default function Home() {
             <h2 className={inter.className}>
               Portfolio <span>-&gt;</span>
             </h2>
-            <p className={inter.className}></p>
+            <p className={inter.className}>
+              Checkout my skills and projects page
+            </p>
           </Link>
           <Link href="https://blog.chrosstech.com" className={styles.card}>
             <h2 className={inter.className}>
